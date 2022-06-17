@@ -4,9 +4,8 @@ In this study, we propose a novel MODWT-based auto-regressive neural network mod
 
 Usage of the repository for the paper "Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics":
 
-* In this repository, we present examples with 15 epidemic datasets. These datasets are collected from varied open-source platforms and published manuscripts. The datasets are also provided in this [Source](Documentation/file.pdf)
+* In this repository, we present examples with 15 epidemic data. These datasets are collected from varied open-source platforms and published manuscripts. The ".xlsx" files of these datasets available in [Source](https://github.com/mad-stat/Epicasting/tree/main/Datasets) contains disease incidence data reported on a monthly or weekly basis in different regions.  
 
-can be directly imported to R statistical software for the analysis of degree distribution of networks data. For example, the repository contains the following data sets (one data example from 10 different domains) for presentation: ego-Twitter(In) (Social Networks), cit-HepTh(In) (Citation Networks), ca-CondMat (Collaboration Networks), Google(In) (Web graphs), Yeast-PPIN (Biological Networks), amazon0601(In) (Product co-purchasing Networks), sx-mathoverflow(In) (Temporal Networks), Email-Enron (Communication Networks), Wiki-Topcats (Ground-truth Networks), and Human25890-session1 (Brain Networks). The ".csv" file of these data sets contain the frequency-degree for these real-world complex networks.
 
 The "models.R" file contains the implementation of popularly-used degree distributions, namely Lomax, power-law, power-law with cutoff, Log-normal, and Exponential distributions. Furthermore, the file "models.R" also contains the implementations of our proposed "Generalized Lomax" family of distributions, namely GLM Type-I, GLM Type-II, GLM Type-III and GLM Type-IV models. The decsirptions of all these models are provided in the manuscript titled "Searching for a new probability distribution for modeling non-scale-free heavy-tailed real-world networks".
 
