@@ -1,5 +1,7 @@
-#' The deep learning models are implemented with Darts library in Google Colaboratory
-@param 
+#' @title Implementation of deep learning forecasting models
+#' @param \code{train} is a time series object for training the model
+#' @param n an \code{integer} value indicating the desired forecast horizons
+#' @library required - darts 
 
 from darts.models import TransformerModel, NBEATSModel, TCNModel, RNNModel
 
