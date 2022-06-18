@@ -1,10 +1,10 @@
 # Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics
 
-In this study, we propose a novel MODWT-based auto-regressive neural network model with predefined architecture specially designed for forecasting epidemic datasets. Our analysis considers publicly available real-world infectious disease datatsets namely - influenza[1], dengue[1-5], hepatitis B[6], and malaria[1] from different regions to analyse the epicasting abiility of our proposed model.
+In this study, we propose a novel MODWT-based auto-regressive neural network model with predefined architecture specially designed for forecasting epidemic dynamics (we refer as "epicasting"). Our study considers publicly available real-world infectious disease datatsets namely - influenza[1], dengue[1-5], hepatitis B[6], and malaria[1] from different regions to analyse the epicasting abiility of our proposed model.
 
 Usage of the repository for the paper "Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics".
 
-* The training phase of the proposed EWNet model initially decomposes an univariate time series into its corresponding details and smooth coefficients by utlizing a MODWT-based additive decomposition as shown below for Colombia dengue dataset. 
+* The training phase of the proposed EWNet model initially decomposes an univariate time series into its corresponding *details* and *smooth* coefficients by utlizing a MODWT-based additive decomposition as shown below for Colombia dengue dataset. 
 ![MODWT_DEC](https://user-images.githubusercontent.com/78313840/174397497-552ff314-e630-45ed-8d45-3c075470563c.png)
 
 Followed by the decomposition, each of the details and smooth series are modelled using an auto-regressive neural network architecture having pre-defined lagged inputs and a single hidden layer to generate one-step ahead forecast. In the subsequent step, the neural network generates multi-step ahead forecasts iteratively and aggregates the corresponding forecasts to generate the final output. Graphical representation of the proposed EWNet model is provided below:
