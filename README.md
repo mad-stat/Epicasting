@@ -11,7 +11,7 @@ Followed by the decomposition, each of the details and smooth series are modelle
 ![Model_Img_mod](https://user-images.githubusercontent.com/78313840/174395719-4c5be830-8e78-431e-b90f-4dcd2ec2df35.jpg)
 
 
-* In this repository, we present application of the proposed EWNet model with 15 epidemic datasets. These datasets are collected from varied open-source platforms and published manuscripts. The ".xlsx" files of these datasets available in [Source](https://github.com/mad-stat/Epicasting/tree/main/Datasets) contains disease incidence data reported on a monthly or weekly basis in different regions. The below map corresonds to the regions and the infectious disease consideered in our study.
+* In this repository, we present application of the proposed EWNet model with 15 epidemic datasets. These datasets are collected from varied open-source platforms and published manuscripts. The ".xlsx" files of these datasets available in [Source](https://github.com/mad-stat/Epicasting/tree/main/Datasets) contains disease incidence data reported on a monthly or weekly basis in different regions. The below map corresonds to the regions and the infectious disease consideered in our study. The map has been generated using this [link](https://www.mapchart.net/).
 ![Map_Disease](https://user-images.githubusercontent.com/78313840/174397613-f52e8828-764f-4ca3-851e-e21b1007b4b8.png)
   
   
