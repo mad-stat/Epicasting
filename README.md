@@ -47,4 +47,4 @@ Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan. "Epicasting: 
 * <a id="10">[10]</a> Paul, Ranjit Kumar, et al. "Package ‘waveletarima’." Seed 500 (2017): 1-5.
 * <a id="11">[11]</a> Scott, Steven L., et al. "Package ‘bsts’." (2022).
 * <a id="12">[12]</a> Herzen, Julien, et al. "Darts: User-friendly modern machine learning for time series." Journal of Machine Learning Research 23.124 (2022): 1-6.
-* * <a id="13">[13]</a> [Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics](https://arxiv.org/pdf/2206.10696.pdf)
+* <a id="13">[13]</a> [Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics](https://arxiv.org/pdf/2206.10696.pdf)
