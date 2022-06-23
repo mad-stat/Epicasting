@@ -27,13 +27,13 @@ Followed by the decomposition, each of the details and smooth series are modelle
 ## Citing Our Work
 Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan.\
 "Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics."\
-arXiv preprint cs/2206.10696 (2022+).
+arXiv preprint cs/2206.10696 (2022).
 
 @article{panja2022epicasting,\
   title={Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics},\
   author={Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan},\
   journal={arXiv preprint cs/2206.10696},\
-  year={2022+}\
+  year={2022}\
 }
 
 ## References
