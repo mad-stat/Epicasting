@@ -25,7 +25,9 @@ Followed by the decomposition, each of the details and smooth series are modelle
 * Reults obtained in the paper for all these epidemic datasets can directly be computed along with the graphs and figures using the implementation files and datasets given in this repository for replicability and sake of reproducibility of our paper. 
 
 ## Citing Our Work
-Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan. "Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics." arXiv preprint cs/2206.10696 (2022+).
+Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan.\
+"Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics."\
+arXiv preprint cs/2206.10696 (2022+).
 
 @article{panja2022epicasting,\
   title={Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics},\
