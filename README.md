@@ -34,7 +34,7 @@ arXiv preprint cs/2206.10696 (2022).
   author={Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan},\
   journal={arXiv preprint cs/2206.10696},\
   year={2022},\
-  note=https://arxiv.org/pdf/2206.10696.pdf\
+  note=https://arxiv.org/pdf/2206.10696.pdf ,\
 }
 
 ## References
