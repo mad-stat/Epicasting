@@ -2,7 +2,7 @@
 
 In this study, we propose a novel MODWT-based auto-regressive neural network model with predefined architecture specially designed for forecasting epidemic dynamics (we refer as "epicasting"). Our study considers publicly available real-world infectious disease datatsets namely - influenza[1], dengue[1-5], hepatitis B[6], and malaria[1] from different regions to analyse the epicasting abiility of our proposed model.
 
-Usage of the repository for the paper "Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics".
+Usage of the repository for the paper "Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics [13]".
 
 * The training phase of the proposed EWNet model initially decomposes an univariate time series into its corresponding *details* and *smooth* coefficients by utlizing a MODWT-based additive decomposition as shown below for Colombia dengue dataset. 
 ![MODWT_DEC](https://user-images.githubusercontent.com/78313840/174397497-552ff314-e630-45ed-8d45-3c075470563c.png)
@@ -24,6 +24,15 @@ Followed by the decomposition, each of the details and smooth series are modelle
 
 * Reults obtained in the paper for all these epidemic datasets can directly be computed along with the graphs and figures using the implementation files and datasets given in this repository for replicability and sake of reproducibility of our paper. 
 
+## Citing Our Work
+Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan. "Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics." arXiv preprint cs/2206.10696 (2022+).
+
+@article{panja2022epicasting,
+  title={Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics},
+  author={Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan},
+  journal={arXiv preprint cs/2206.10696},
+  year={2022+}
+}
 
 ## References
 * <a id="1">[1]</a> [Disease_outbreak_data](https://github.com/JohannHM/Disease-Outbreaks-Data)
@@ -38,3 +47,4 @@ Followed by the decomposition, each of the details and smooth series are modelle
 * <a id="10">[10]</a> Paul, Ranjit Kumar, et al. "Package ‘waveletarima’." Seed 500 (2017): 1-5.
 * <a id="11">[11]</a> Scott, Steven L., et al. "Package ‘bsts’." (2022).
 * <a id="12">[12]</a> Herzen, Julien, et al. "Darts: User-friendly modern machine learning for time series." Journal of Machine Learning Research 23.124 (2022): 1-6.
+* * <a id="13">[13]</a> [Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics](https://arxiv.org/pdf/2206.10696.pdf)
