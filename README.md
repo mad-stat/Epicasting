@@ -33,7 +33,8 @@ arXiv preprint cs/2206.10696 (2022).
   title={Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics},\
   author={Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan},\
   journal={arXiv preprint cs/2206.10696},\
-  year={2022}\
+  year={2022},\
+  note={(https://arxiv.org/pdf/2206.10696.pdf)}\
 }
 
 ## References
