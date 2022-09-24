@@ -88,7 +88,7 @@ ewnet_val <- function(ts,Waveletlevels,MaxARParam,boundary,FastFlag,NForecast,NV
     ewnet_val_RMSE = Metrics::rmse(val, fore_ewnet_val$`fit_ewnet_val$Finalforecast`)
     ewnet_val_evaluation = data.frame(SMAPE = ewnet_val_SMAPE, MAE = ewnet_val_MAE, MASE = ewnet_val_MASE, RMSE = ewnet_val_RMSE, p)
     print(p)
-    model_smry <- rbind(model_smry, warnn_evaluation)
+    model_smry <- rbind(model_smry, ewnet_val_evaluation)
   }
   final = model_smry[which.min(model_smry$MASE),]
   fit_ewnet = WaveletFittingnar(ts(ts), Waveletlevels = floor(log(length(ts))), boundary = "periodic", 
