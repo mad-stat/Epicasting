@@ -98,5 +98,5 @@ ewnet_val <- function(ts,Waveletlevels,MaxARParam,boundary,FastFlag,NForecast,NV
 }  
 
 #' Implementation example
-#' Fit EWNet model to the given time series data with 5 lagged observations to generate forevast of next 3 time points
+#' Fit EWNet model to the given time series data with 5 lagged observations to generate forecast of next 3 time points
 #' ewnet(data, MaxARParam = 5, NForecast = 3) 
