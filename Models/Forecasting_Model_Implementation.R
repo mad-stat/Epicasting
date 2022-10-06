@@ -10,7 +10,7 @@ model_summary = function(test, output, model){
   MAE = mae(as.vector(test),output)
   MASE = mase(as.vector(test),output)
   RMSE = rmse(as.vector(test),output)
-  Evaluation = data.frame(Model = model, MAPE = MAPE, SMAPE = SMAPE, MAE = MAE, MASE = MASE, RMSE = RMSE)
+  Evaluation = data.frame(Model = model, SMAPE = SMAPE, MAE = MAE, MASE = MASE, RMSE = RMSE)
   return(Evaluation)
 }
 
