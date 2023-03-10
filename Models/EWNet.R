@@ -27,6 +27,8 @@
 #' @param repeats An \code{integer} representing the number of repetations of the neural network.
 #' Default: 500.
 #' @param: NForecast Length of the forecast horizon, an \code{integer} value.
+#' @param: PI (optinal)  A logical indicator indicating the probabilistic bands
+#' Options. "TRUE", "FALSE"(default).
 #' @param: NVal An \code{integer} denoting the size of the validation set used for hyper-parameter tuning.
 #' @return Returns an object of class "\code{ts}" representing the forecast of \code{NForecast} horizon.
 
@@ -62,17 +64,26 @@ WaveletFittingnar<- function(ts,Waveletlevels,MaxARParam,boundary,FastFlag,NFore
 
 #' EWNet model without validation set
 
-ewnet <- function(ts,Waveletlevels,MaxARParam,boundary,FastFlag,NForecast){ 
+ewnet <- function(ts,Waveletlevels,MaxARParam,boundary,FastFlag,NForecast, PI =FALSE){ 
   n_test = NForecast 
-  EWNet_fit = WaveletFittingnar(ts(ts), Waveletlevels = floor(log(length(ts))), boundary = "periodic", 
+  fit_ewnet = WaveletFittingnar(ts(ts), Waveletlevels = floor(log(length(ts))), boundary = "periodic", 
                            FastFlag = TRUE, MaxARParam, NForecast)
-  fore_ewnet <- as.data.frame(EWNet_fit$Finalforecast, h = NForecast)
-  return(fore_ewnet)
+  if (isTRUE(PI)){
+    upper = fit_ewnet$Finalforecast + 1.5*sd(fit_ewnet$Finalforecast)
+    lower = fit_ewnet$Finalforecast - 1.5*sd(fit_ewnet$Finalforecast)
+    forecast = data.frame("Forecast" = fit_ewnet$Finalforecast, 
+                          "Lower Interval" = lower,
+                          "Upper Interval" = upper)
+  }else{
+    forecast = data.frame("Forecast" = fit_ewnet$Finalforecast)
+  }
+  return(forecast)
 }
+ 
 
 #' EWNet model with validation set
 
-ewnet_val <- function(ts,Waveletlevels,MaxARParam,boundary,FastFlag,NForecast,NVal){  
+ewnet_val <- function(ts,Waveletlevels,MaxARParam,boundary,FastFlag,NForecast,NVal, PI =FALSE){  
   train_val = subset(ts(ts),  end= length(ts(ts))-NVal)
   val = subset(ts(ts),  start= length(ts)-NVal+1)
   n_val = length(val)
@@ -93,9 +104,17 @@ ewnet_val <- function(ts,Waveletlevels,MaxARParam,boundary,FastFlag,NForecast,NV
   final = model_smry[which.min(model_smry$MASE),]
   fit_ewnet = WaveletFittingnar(ts(ts), Waveletlevels = floor(log(length(ts))), boundary = "periodic", 
                                 FastFlag = TRUE, MaxARParam = final$p, NForecast = n_test)
-  fore_ewnet = as.data.frame(fit_ewnet$Finalforecast, h = n_test)
-  return(fore_ewnet)
-}  
+    if (isTRUE(PI)){
+    upper = fit_ewnet$Finalforecast + 1.5*sd(fit_ewnet$Finalforecast)
+    lower = fit_ewnet$Finalforecast - 1.5*sd(fit_ewnet$Finalforecast)
+    forecast = data.frame("Forecast" = fit_ewnet$Finalforecast, 
+                          "Lower Interval" = lower,
+                          "Upper Interval" = upper)
+  }else{
+    forecast = data.frame("Forecast" = fit_ewnet$Finalforecast)
+  }
+  return(forecast)
+}
 
 #' Implementation example
 #' Fit EWNet model to the given time series data with 5 lagged observations to generate forecast of next 3 time points
