@@ -14,6 +14,16 @@ model_summary = function(test, output, model){
   return(Evaluation)
 }
 
+#' RW
+fitRW = rwf(y = train, h = n) 
+RW_summary = model_summary(test, fitRW, model = "RW")
+performance = rbind(performance, RW_summary)
+
+#' RWD
+fitRWD = rwf(y = train, h = n, drift = TRUE) 
+RWD_summary = model_summary(test, fitRWD, model = "RWD")
+performance = rbind(performance, RWD_summary)
+
 #' ARIMA 
 fitARIMA = auto.arima(train) 
 predARIMA = forecast::forecast(fitARIMA,h=n)
