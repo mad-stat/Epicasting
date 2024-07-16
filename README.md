@@ -29,14 +29,14 @@ Panja, Madhurima; Chakraborty, Tanujit; Kumar, Uttam and Liu, Nan.\
 "Epicasting: An Ensemble Wavelet Neural Network (EWNet) for Forecasting Epidemics."\
 Neural Networks 165 (2023): 185-212.
 
-@article{panja2023epicasting,
-  title={Epicasting: an ensemble wavelet neural network for forecasting epidemics},
-  author={Panja, Madhurima and Chakraborty, Tanujit and Kumar, Uttam and Liu, Nan},
-  journal={Neural Networks},
-  volume={165},
-  pages={185--212},
-  year={2023},
-  publisher={Elsevier}
+@article{panja2023epicasting,\
+  title={Epicasting: an ensemble wavelet neural network for forecasting epidemics},\
+  author={Panja, Madhurima and Chakraborty, Tanujit and Kumar, Uttam and Liu, Nan},\
+  journal={Neural Networks},\
+  volume={165},\
+  pages={185--212},\
+  year={2023},\
+  publisher={Elsevier}\
 }
 
 ## References
